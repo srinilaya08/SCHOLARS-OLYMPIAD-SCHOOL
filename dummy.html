@@ -1,0 +1,121 @@
+<?php
+// Load job openings from jobs.json
+$jobsFile = 'jobs.json';
+$jobs = [];
+if (file_exists($jobsFile)) {
+    $jsonData = file_get_contents($jobsFile);
+    $jobs = json_decode($jsonData, true);
+}
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers at Nalanda High School</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
+ </head>
+
+<body class=" overflow-x-hidden"> 
+  
+
+<!-- Header Section - Light Version -->
+<div class="bg-[#ffffff] text-[#2B2D42] py-24 px-6 relative overflow-hidden">
+  <div class="max-w-6xl mx-auto text-center relative z-10">
+    <h1 class="text-4xl md:text-5xl font-extrabold mb-6 fade-up">
+      Careers at <span class="text-[#0B1F55]">Nalanda High School</span>
+    </h1>
+    <p class="text-lg md:text-xl max-w-2xl mx-auto mb-6 fade-up">
+      Shape young minds, contribute to education, and grow with one of the most dynamic institutions in Armoor.
+    </p>
+    <div class="w-24 h-1 bg-[#0B1F55] mx-auto rounded-full fade-up"></div>
+  </div>
+
+  <!-- Decorative Element -->
+  <div class="absolute bottom-0 left-0 w-full z-0">
+    <svg class="w-full h-32" viewBox="0 0 1440 320" preserveAspectRatio="none">
+      <path fill="#0B1F55" fill-opacity="1" d="M0,160L60,144C120,128,240,96,360,90.7C480,85,600,107,720,112C840,117,960,107,1080,106.7C1200,107,1320,117,1380,122.7L1440,128L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
+    </svg>
+  </div>
+</div>
+
+
+  <!-- Job Openings Section -->
+<section class="py-16 px-4 bg-[#ffffff]">
+  <div class="max-w-7xl mx-auto">
+    <h2 class="text-3xl font-bold text-center mb-10 text-[#383C3E]">Open Positions</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 fade-up">
+      <?php if (!empty($jobs)) : ?>
+        <?php foreach ($jobs as $job) : ?>
+          <div class="bg-white border border-[#EEE] rounded-lg p-6 shadow-lg hover:shadow-2xl transition duration-300">
+            <h3 class="text-2xl font-semibold text-[#240046] mb-2"><?php echo htmlspecialchars($job['title']); ?></h3>
+            <p class="text-gray-700 mb-2"><?php echo htmlspecialchars($job['description']); ?></p>
+            <p class="text-sm text-gray-500"><i class="fas fa-map-marker-alt text-[#E63946]"></i> <?php echo htmlspecialchars($job['location']); ?></p>
+            <p class="text-xs mt-3 text-[#383C3E] font-semibold">Job ID: <?php echo htmlspecialchars($job['id']); ?></p>
+          </div>
+        <?php endforeach; ?>
+      <?php else : ?>
+        <p class="text-center text-gray-500 col-span-2">No job openings at the moment.</p>
+      <?php endif; ?>
+    </div>
+  </div>
+</section>
+
+<!-- Application Form -->
+<section class="py-16 px-4 bg-white">
+  <div class="max-w-3xl mx-auto fade-up">
+    <h2 class="text-3xl font-bold text-center mb-8 text-[#383C3E]">Submit Your Application</h2>
+    <form action="apply.php" method="POST" enctype="multipart/form-data" class="space-y-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <input type="text" name="full_name" placeholder="Full Name" required class="p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#7B2CBF]">
+        <input type="email" name="email" placeholder="Email" required class="p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#7B2CBF]">
+      </div>
+      <input type="text" name="phone" placeholder="Phone Number" required class="p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#7B2CBF]">
+      <select name="job_id" required class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#7B2CBF]">
+        <option value="" disabled selected>Select Job Opening</option>
+        <?php foreach ($jobs as $job) : ?>
+          <option value="<?php echo htmlspecialchars($job['id']); ?>"><?php echo htmlspecialchars($job['title']); ?></option>
+        <?php endforeach; ?>
+      </select>
+      <textarea name="cover_letter" placeholder="Cover Letter" rows="4" class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#7B2CBF]"></textarea>
+      <div>
+        <label class="block mb-1 font-medium text-gray-700">Upload Resume</label>
+        <input type="file" name="resume" accept=".pdf,.doc,.docx" required class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#7B2CBF]">
+      </div>
+      <button type="submit" class="w-full bg-[#0B1F55] text-white py-3 rounded-md font-semibold hover:bg-[#0B1F55] transition">Apply Now</button>
+    </form>
+  </div>
+</section>
+
+
+  
+
+    <script src="js/common.js"></script>
+
+  <script>
+document.addEventListener('DOMContentLoaded', function () {
+  gsap.registerPlugin(ScrollTrigger);
+
+  gsap.utils.toArray('.fade-up').forEach(el => {
+    gsap.from(el, {
+      opacity: 0,
+      y: 50,
+      duration: 1,
+      ease: "power2.out",
+      scrollTrigger: {
+        trigger: el,
+        start: "top 90%",
+        toggleActions: "play none none none"
+      }
+    });
+  });
+});
+
+  </script>
+</body>
+</html>
