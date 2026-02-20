@@ -4,6 +4,7 @@ $resumes_dir = "resumes/";
 if (!file_exists($resumes_dir)) {
     mkdir($resumes_dir, 0755, true);
 }
+$admin_email = "vishnumarripalli123@gmail.com";  // 🔁 Replace with your admin's actual email
 
 // Set allowed file types and maximum file size (5MB)
 $allowed_types = ["pdf", "doc", "docx"];
@@ -33,7 +34,23 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Create unique filename for resume
         $new_file_name = uniqid() . '_' . time() . '.' . $file_ext;
         $target_file = $resumes_dir . $new_file_name;
+$subject = "New Job Application from $full_name";
+$message = "Hello Admin,\n\nA new job application has been submitted.\n\n"
+         . "Full Name: $full_name\n"
+         . "Email: $email\n"
+         . "Phone: $phone\n"
+         . "Job ID: $job_id\n"
+         . "Cover Letter:\n$cover_letter\n\n"
+         . "Resume File: " . $target_file . "\n"
+         . "Applied On: " . date("Y-m-d H:i:s") . "\n\n"
+         . "Please check the application dashboard for more details.";
 
+// Additional headers
+$headers = "From: no-reply@gentlekidsplayschool.in\r\n"; // 🔁 Replace with your domain
+$headers .= "Reply-To: $email\r\n";
+
+// Send email
+@mail($admin_email, $subject, $message, $headers);
         if (!move_uploaded_file($_FILES["resume"]["tmp_name"], $target_file)) {
             die("Failed to upload resume. Please try again.");
         }

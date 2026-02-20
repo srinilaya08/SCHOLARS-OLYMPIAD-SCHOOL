@@ -83,75 +83,83 @@ if (file_exists($jobsFile)) {
 </head>
 
 <body class="overflow-x-hidden bg-gradient-to-b from-white to-blue-50">
-<!-- Navbar -->
-    <nav class="bg-white shadow-lg fixed h-20 w-full top-0 z-50" id="navbar">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-16 md:h-20">
+  <!-- Navbar -->
+  <nav class="bg-white shadow-lg fixed h-20 w-full top-0 z-50" id="navbar">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16 md:h-20">
 
-                <!-- Logo -->
-                <div class="flex-shrink-0 flex items-center" id="logo">
-                    <img src="assets/logo.jpg" alt="School Logo" class=" h-16">
-                </div>
+       <!-- Enhanced Logo Section -->
+<div class="flex items-center gap-4" id="logo">
+  <!-- Logo Image -->
+  <img src="assets/logo.jpg" alt="School Logo" class="h-16 w-16 rounded-full shadow-md object-cover">
 
-                <!-- Desktop Menu -->
-                <div class="hidden md:block">
-                    <div class="ml-10 flex items-baseline space-x-8" id="desktop-menu">
-                        <a href="index.html"
-                            class="mobile-nav-link text-[#383C3E] block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200 hover:glow-on-hover">Home</a>
-                       
-                        <a href="curriculum.html"
-                            class="mobile-nav-link text-[#383C3E] block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200 hover:glow-on-hover">Curriculum</a>
-                        <a href="careers.php"
-                            class="mobile-nav-link text-[#383C3E] block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200 hover:glow-on-hover">Careers</a>
-                       
-                        <a href="gallery.php"
-                            class="mobile-nav-link text-[#383C3E] block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200 hover:glow-on-hover">Gallery</a>
-                        <a href="about-us.html"
-                            class="mobile-nav-link text-[#383C3E] block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200 hover:glow-on-hover">About
-                            us</a>
-                        <a href="contactus.html"
-                            class="mobile-nav-link text-[#383C3E] block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200 hover:glow-on-hover">Contact
-                            us</a>
-                    </div>
-                </div>
+  <!-- Logo Text -->
+  <div class="leading-tight">
+    <h1 class="text-2xl font-bold text-[#2D3748] logo-font">Gentle Kids</h1>
+    <p class="text-sm text-[#718096]">Kids blossom here</p>
+  </div>
+</div>
 
-                <!-- Mobile Menu Button -->
-                <div class="md:hidden">
-                    <button id="mobile-menu-btn" type="button"
-                        class="mobile-menu-button bg-gray-100 inline-flex items-center justify-center p-2 rounded-md text-[#383C3E] hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500 transition-colors duration-200">
-                        <span class="sr-only">Open main menu</span>
-                        <div class="hamburger-lines">
-                            <span
-                                class="block w-6 h-0.5 bg-current mb-1 transition-all duration-300 ease-in-out"></span>
-                            <span
-                                class="block w-6 h-0.5 bg-current mb-1 transition-all duration-300 ease-in-out"></span>
-                            <span class="block w-6 h-0.5 bg-current transition-all duration-300 ease-in-out"></span>
-                        </div>
-                    </button>
-                </div>
+
+        <!-- Desktop Menu -->
+        <div class="hidden md:block">
+          <div class="ml-10 flex items-baseline space-x-8" id="desktop-menu">
+            <a href="index.html"
+              class="mobile-nav-link text-[#383C3E] block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200 hover:glow-on-hover">Home</a>
+
+            <a href="curriculum.html"
+              class="mobile-nav-link text-[#383C3E] block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200 hover:glow-on-hover">Curriculum</a>
+            <a href="careers.php"
+              class="mobile-nav-link text-[#383C3E] block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200 hover:glow-on-hover">Careers</a>
+
+            <a href="gallery.php"
+              class="mobile-nav-link text-[#383C3E] block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200 hover:glow-on-hover">Gallery</a>
+            <a href="about-us.html"
+              class="mobile-nav-link text-[#383C3E] block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200 hover:glow-on-hover">About
+              us</a>
+            <a href="contactus.html"
+              class="mobile-nav-link text-[#383C3E] block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200 hover:glow-on-hover">Contact
+              us</a>
+          </div>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <div class="md:hidden">
+          <button id="mobile-menu-btn" type="button"
+            class="mobile-menu-button bg-gray-100 inline-flex items-center justify-center p-2 rounded-md text-[#383C3E] hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500 transition-colors duration-200">
+            <span class="sr-only">Open main menu</span>
+            <div class="hamburger-lines">
+              <span class="block w-6 h-0.5 bg-current mb-1 transition-all duration-300 ease-in-out"></span>
+              <span class="block w-6 h-0.5 bg-current mb-1 transition-all duration-300 ease-in-out"></span>
+              <span class="block w-6 h-0.5 bg-current transition-all duration-300 ease-in-out"></span>
             </div>
+          </button>
         </div>
-
-        <!-- Mobile Menu -->
-        <div class="md:hidden mobile-menu opacity-0 invisible transform -translate-y-full" id="mobile-menu">
-           <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 flex flex-col bg-white shadow-lg">
-        <a href="index.html"
-            class="mobile-nav-link text-[#383C3E] block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200 hover:glow-on-hover">Home</a>
-       
-        <a href="curriculum.html"
-            class="mobile-nav-link text-[#383C3E] block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200 hover:glow-on-hover">Curriculum</a>
-        <a href="careers.php"
-            class="mobile-nav-link text-[#383C3E] block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200 hover:glow-on-hover">Careers</a>
-        
-        <a href="gallery.php"
-            class="mobile-nav-link text-[#383C3E] block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200 hover:glow-on-hover">Gallery</a>
-        <a href="about-us.html"
-            class="mobile-nav-link text-[#383C3E] block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200 hover:glow-on-hover">About us</a>
-        <a href="contactus.html"
-            class="mobile-nav-link text-[#383C3E] block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200 hover:glow-on-hover">Contact us</a>
+      </div>
     </div>
-        </div>
-    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="md:hidden mobile-menu opacity-0 invisible transform -translate-y-full" id="mobile-menu">
+      <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 flex flex-col bg-white shadow-lg">
+        <a href="index.html"
+          class="mobile-nav-link text-[#383C3E] block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200 hover:glow-on-hover">Home</a>
+
+        <a href="curriculum.html"
+          class="mobile-nav-link text-[#383C3E] block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200 hover:glow-on-hover">Curriculum</a>
+        <a href="careers.php"
+          class="mobile-nav-link text-[#383C3E] block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200 hover:glow-on-hover">Careers</a>
+
+        <a href="gallery.php"
+          class="mobile-nav-link text-[#383C3E] block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200 hover:glow-on-hover">Gallery</a>
+        <a href="about-us.html"
+          class="mobile-nav-link text-[#383C3E] block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200 hover:glow-on-hover">About
+          us</a>
+        <a href="contactus.html"
+          class="mobile-nav-link text-[#383C3E] block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200 hover:glow-on-hover">Contact
+          us</a>
+      </div>
+    </div>
+  </nav>
 <!-- Header Section -->
 <div class="bg-[#FDE68A] text-[#1E293B] py-24 px-6 relative overflow-hidden">
   <div class="max-w-6xl mx-auto text-center relative z-10">
@@ -216,84 +224,107 @@ if (file_exists($jobsFile)) {
     </form>
   </div>
 </section>
-<!-- FOOTER -->
-<footer class="bg-[#f5a623] text-white pt-14 pb-8 px-6 md:px-20 relative overflow-hidden" id="footer">
-  <!-- Cloud Top Design -->
+  <!-- FOOTER -->
+  <footer class="bg-[#f5a623] text-white pt-14 pb-8 px-6 md:px-20 relative overflow-hidden" id="footer">
 
-  <!-- Main Footer Grid -->
-  <div class="relative z-20 grid grid-cols-1 md:grid-cols-3 gap-10">
-    
-    <!-- About Section -->
-    <div class="footer-about">
-      <h4 class="text-xl font-bold mb-4">About Gentle Kids</h4>
-      <p class="text-sm leading-relaxed">
-        Gentle Kids Play School in Armoor is a nurturing preschool and early education center committed to playful learning. 
-        With branches in Yogeshwara Colony and Janda Gally, we focus on building strong foundations through fun, care, and creativity—making us one of the most trusted play schools in Armoor.
-      </p>
-    </div>
+    <!-- Main Footer Grid -->
+    <div class="relative z-20 grid grid-cols-1 md:grid-cols-3 gap-10">
 
-    <!-- Quick Links Section -->
-    <div class="footer-links">
-      <h4 class="text-xl font-bold mb-4">Quick Links</h4>
-      <ul class="space-y-2 text-sm">
-        <li><a href="/index.html" class="hover:underline">Home</a></li>
-        <li><a href="/about-us.html" class="hover:underline">About</a></li>
-        <li><a href="/curriculum.html" class="hover:underline">Curriculum</a></li>
-        <li><a href="/careers.php" class="hover:underline">Careers</a></li>
-        <li><a href="/gallery.php" class="hover:underline">Gallery</a></li>
-        <li><a href="/contactus.html" class="hover:underline">Contact</a></li>
-      </ul>
-    </div>
-
-    <!-- Contact Info Section -->
-    <div class="footer-contact space-y-4">
-      <h4 class="text-xl font-bold mb-4">Contact Us</h4>
-
-      <div class="flex items-start gap-3">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path d="M17.657 16.657L13.414 12.414a4 4 0 00-5.657 0L6.343 13.828m6.364-6.364a4 4 0 015.657 0l1.414 1.414a4 4 0 010 5.657l-1.414 1.414" />
-        </svg>
-        <p class="text-sm leading-snug">
-          <strong>Our Branches:</strong><br>
-          Yogeshwara Colony – Branch 1<br>
-          Janda Gally – Branch 2<br>
-          Armoor, Telangana
+      <!-- About Section -->
+      <div class="footer-about">
+        <h4 class="text-xl font-bold mb-4">About Gentle Kids</h4>
+        <p class="text-sm leading-relaxed">
+          Gentle Kids Play School in Armoor is a nurturing preschool and early education center committed to playful
+          learning.
+          With branches in Yogeshwara Colony and Janda Gally, we focus on building strong foundations through fun, care,
+          and creativity—making us one of the most trusted play schools in Armoor.
         </p>
       </div>
 
-      <div class="flex items-center gap-3">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path d="M16 12a4 4 0 01-8 0 4 4 0 018 0zm0 0v1a4 4 0 01-8 0v-1" />
-        </svg>
-        <a href="mailto:gentlekidsplayschool@gmail.com" class="text-sm hover:underline">gentlekidsplayschool@gmail.com</a>
+      <!-- Quick Links -->
+      <div class="footer-links">
+        <h4 class="text-xl font-bold mb-4">Quick Links</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="/index.html" class="hover:underline">Home</a></li>
+          <li><a href="/about-us.html" class="hover:underline">About</a></li>
+          <li><a href="/curriculum.html" class="hover:underline">Curriculum</a></li>
+          <li><a href="/careers.php" class="hover:underline">Careers</a></li>
+          <li><a href="/gallery.php" class="hover:underline">Gallery</a></li>
+          <li><a href="/contactus.html" class="hover:underline">Contact</a></li>
+        </ul>
       </div>
 
-      <div class="flex items-center gap-3">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path d="M3 5h2l3 10a1 1 0 001 1h10v-2H9.42a1 1 0 01-.98-.804L8.1 12H19a1 1 0 001-1V7a1 1 0 00-1-1H5.42l-.94-2H3v2z" />
-        </svg>
-        <a href="tel:+918686090806" class="text-sm hover:underline">+91 86860 90806</a>
-      </div>
+      <!-- Contact Info -->
+      <div class="footer-contact space-y-4">
+        <h4 class="text-xl font-bold mb-4">Contact Us</h4>
 
-      <div class="flex items-center gap-3">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-        </svg>
-        <p class="text-sm">Mon – Sat: 9:00 AM – 4:00 PM</p>
+        <!-- Location -->
+        <div class="flex items-start gap-3">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mt-1" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M12 11c1.656 0 3-1.343 3-3s-1.344-3-3-3-3 1.343-3 3 1.344 3 3 3z" />
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" />
+          </svg>
+          <p class="text-sm leading-snug">
+            <strong>Our Branches:</strong><br>
+            Yogeshwara Colony – Branch 1<br>
+            Janda Gally – Branch 2<br>
+            Armoor, Telangana
+          </p>
+        </div>
+
+        <!-- Email -->
+        <div class="flex items-center gap-3">
+          <svg data-name="1-Email" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"
+            class="w-4 h-4 text-white fill-current">
+            <path
+              d="M29 4H3a3 3 0 0 0-3 3v18a3 3 0 0 0 3 3h26a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3zm-.72 2L16 14.77 3.72 6zM30 25a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7.23l13.42 9.58a1 1 0 0 0 1.16 0L30 7.23z" />
+          </svg>
+
+          <div class="flex flex-col">
+            <a href="mailto:gentlekidsarmoor@gmail.com" class="text-sm hover:underline">gentlekidsarmoor@gmail.com</a>
+            <a href="mailto:gentlekidsm@gmail.com" class="text-sm hover:underline">gentlekidsm@gmail.com</a>
+          </div>
+        </div>
+
+        <!-- Phone -->
+        <div class="flex items-center gap-3">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.314 28.323" class="w-4 h-4 text-white fill-current">
+            <path
+              d="m27.728 20.384-4.242-4.242a1.982 1.982 0 0 0-1.413-.586h-.002c-.534 0-1.036.209-1.413.586L17.83 18.97l-8.485-8.485 2.828-2.828c.78-.78.78-2.05-.001-2.83L7.929.585A1.986 1.986 0 0 0 6.516 0h-.001C5.98 0 5.478.209 5.101.587L.858 4.83C.729 4.958-.389 6.168.142 8.827c.626 3.129 3.246 7.019 7.787 11.56 6.499 6.499 10.598 7.937 12.953 7.937 1.63 0 2.426-.689 2.604-.867l4.242-4.242c.378-.378.587-.881.586-1.416 0-.534-.208-1.037-.586-1.415zm-5.656 5.658c-.028.028-3.409 2.249-12.729-7.07C-.178 9.452 2.276 6.243 2.272 6.244L6.515 2l4.243 4.244-3.535 3.535a.999.999 0 0 0 0 1.414l9.899 9.899a.999.999 0 0 0 1.414 0l3.535-3.536 4.243 4.244-4.242 4.242z" />
+          </svg>
+
+          <div class="flex flex-col">
+            <a href="tel:+918686090806" class="text-sm hover:underline">+91 86860 90806</a>
+            <a href="tel:+918639030903" class="text-sm hover:underline">+91 86390 30903</a>
+          </div>
+        </div>
+
+        <!-- Working Hours -->
+        <div class="flex items-center gap-3">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+          <p class="text-sm">Mon – Sat: 9:00 AM – 4:00 PM</p>
+        </div>
       </div>
     </div>
-  </div>
 
-  <!-- Divider and Bottom Note -->
-<div class="border-t border-white mt-10 pt-4 text-center text-sm">
-  &copy; 2025 Gentle Kids Play School, Armoor. All rights reserved. | Trusted preschool and early education center in Telangana.
-  <br>
-  <span class="block mt-1">Designed & Developed by 
-    <a href="https://nexvo.vercel.app/" target="_blank" rel="noopener noreferrer" class="underline hover:text-gray-200">Nexvo Solutions</a>
-  </span>
-  M Vishnuvardhan
-</div>
-</footer>
+    <!-- Divider and Bottom Note -->
+    <div class="border-t border-white mt-10 pt-4 text-center text-sm">
+      &copy; 2025 Gentle Kids Play School, Armoor. All rights reserved. | Trusted preschool and early education center
+      in Telangana.
+      <br>
+      <span class="block mt-1">Designed & Developed by
+        <a href="https://nexvo.vercel.app/" target="_blank" rel="noopener noreferrer"
+          class="underline hover:text-gray-200">Nexvo Solutions</a>
+      </span>
+      M Vishnuvardhan
+    </div>
+  </footer>
 <script>
 document.addEventListener('DOMContentLoaded', function () {
   gsap.registerPlugin(ScrollTrigger);
