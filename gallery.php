@@ -8,34 +8,34 @@ $events = file_exists($eventsFile) ? json_decode(file_get_contents($eventsFile),
   <!-- Basic Meta Tags -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" href="./assets/logo.jpg" type="image/x-icon" />
+  <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
 
-  <title>Gallery | Gentle Kids Play School – Joyful Moments in Armoor</title>
+  <title>Gallery | Scholars Olympiad School – Joyful Moments in Armoor</title>
   <link rel="canonical" href="https://gentlekidsplayschool.in/gallery.php">
 
   <!-- SEO Meta Tags -->
   <meta name="keywords"
-    content="Gentle Kids Play School Gallery, Armoor preschool photos, kids events, play school activities, fun learning images, kids celebrations, Armoor daycare moments, school photo gallery" />
+    content="Scholars Olympiad School Gallery, Armoor preschool photos, kids events, play school activities, fun learning images, kids celebrations, Armoor daycare moments, school photo gallery" />
   <meta name="description"
-    content="Explore the joyful and vibrant moments captured at Gentle Kids Play School in Armoor. View photos of fun learning, events, celebrations, and day-to-day activities that make our school special." />
+    content="Explore the joyful and vibrant moments captured at Scholars Olympiad School in Armoor. View photos of fun learning, events, celebrations, and day-to-day activities that make our school special." />
 
   <!-- Open Graph Meta Tags (for Social Sharing) -->
-  <meta property="og:title" content="Gallery | Gentle Kids Play School – Joyful Moments in Armoor" />
+  <meta property="og:title" content="Gallery | Scholars Olympiad School – Joyful Moments in Armoor" />
   <meta property="og:description"
-    content="Take a visual tour of Gentle Kids Play School through our gallery. Witness the smiles, creativity, and celebrations that make our school a joyful place for children." />
+    content="Take a visual tour of Scholars Olympiad School through our gallery. Witness the smiles, creativity, and celebrations that make our school a joyful place for children." />
   <meta property="og:image" content="https://gentlekidsplayschool.in/assets/gallery-banner.jpg" />
   <meta property="og:url" content="https://gentlekidsplayschool.in/gallery.php" />
   <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="Gentle Kids Play School" />
+  <meta property="og:site_name" content="Scholars Olympiad School" />
 
   <!-- Schema Markup for Gallery Page -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "ImageGallery",
-    "name": "Gentle Kids Play School Gallery",
+    "name": "Scholars Olympiad School Gallery",
     "url": "https://gentlekidsplayschool.in/gallery.php",
-    "description": "Photo gallery of joyful moments, events, and classroom activities at Gentle Kids Play School in Armoor.",
+    "description": "Photo gallery of joyful moments, events, and classroom activities at Scholars Olympiad School in Armoor.",
     "image": [
       "https://gentlekidsplayschool.in/assets/gallery1.jpg",
       "https://gentlekidsplayschool.in/assets/gallery2.jpg",
@@ -43,10 +43,10 @@ $events = file_exists($eventsFile) ? json_decode(file_get_contents($eventsFile),
     ],
     "publisher": {
       "@type": "Organization",
-      "name": "Gentle Kids Play School",
+      "name": "Scholars Olympiad School",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://gentlekidsplayschool.in/assets/logo.jpg"
+        "url": "https://gentlekidsplayschool.in/assets/logo.png"
       }
     }
   }
@@ -73,7 +73,7 @@ $events = file_exists($eventsFile) ? json_decode(file_get_contents($eventsFile),
        <!-- Enhanced Logo Section -->
 <div class="flex items-center gap-4" id="logo">
   <!-- Logo Image -->
-  <img src="assets/logo.jpg" alt="School Logo" class="h-16 w-16 rounded-full shadow-md object-cover">
+  <img src="assets/logo.png" alt="School Logo" class="h-16 w-16 rounded-full shadow-md object-cover">
 
   <!-- Logo Text -->
   <div class="leading-tight">
@@ -148,7 +148,7 @@ $events = file_exists($eventsFile) ? json_decode(file_get_contents($eventsFile),
   <div class="absolute inset-0 bg-black bg-opacity-50"></div>
   <div class="relative max-w-4xl mx-auto text-center z-10">
     <h1 class="text-4xl md:text-5xl font-bold mb-4 fade-up">Events & Celebrations</h1>
-    <p class="text-lg md:text-xl max-w-2xl mx-auto">Witness the joyful moments, vibrant festivals, and creative expressions of our little learners at Gentle Kids Play School, Armoor.</p>
+    <p class="text-lg md:text-xl max-w-2xl mx-auto">Witness the joyful moments, vibrant festivals, and creative expressions of our little learners at Scholars Olympiad School, Armoor.</p>
   </div>
 </header>
 
@@ -198,7 +198,7 @@ $events = file_exists($eventsFile) ? json_decode(file_get_contents($eventsFile),
       <div class="footer-about">
         <h4 class="text-xl font-bold mb-4">About Gentle Kids</h4>
         <p class="text-sm leading-relaxed">
-          Gentle Kids Play School in Armoor is a nurturing preschool and early education center committed to playful
+          Scholars Olympiad School in Armoor is a nurturing preschool and early education center committed to playful
           learning.
           With branches in Yogeshwara Colony and Janda Gally, we focus on building strong foundations through fun, care,
           and creativity—making us one of the most trusted play schools in Armoor.
@@ -279,7 +279,7 @@ $events = file_exists($eventsFile) ? json_decode(file_get_contents($eventsFile),
 
     <!-- Divider and Bottom Note -->
     <div class="border-t border-white mt-10 pt-4 text-center text-sm">
-      &copy; 2025 Gentle Kids Play School, Armoor. All rights reserved. | Trusted preschool and early education center
+      &copy; 2025 Scholars Olympiad School, Armoor. All rights reserved. | Trusted preschool and early education center
       in Telangana.
       <br>
       <span class="block mt-1">Designed & Developed by

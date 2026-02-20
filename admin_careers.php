@@ -85,7 +85,7 @@ if (isset($_GET['delete_app'])) {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Admin Panel | Careers Management - Gentle Kids play School</title>
+  <title>Admin Panel | Careers Management - Scholars Olympiad School</title>
       <link rel="shortcut icon" href="./assests/logo.png" type="image/x-icon">
 
   

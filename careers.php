@@ -14,26 +14,26 @@ if (file_exists($jobsFile)) {
   <!-- Basic Meta -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" href="./assets/logo.jpg" type="image/x-icon" />
+  <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
 
   <link rel="canonical" href="https://gentlekidsplayschool.in/careers.php">
 
   <!-- SEO Meta -->
   <meta name="keywords"
-    content="Gentle Kids Play School Careers, Armoor preschool jobs, teaching jobs in Armoor, preschool teacher jobs, play school openings, daycare staff Armoor" />
+    content="Scholars Olympiad School Careers, Armoor preschool jobs, teaching jobs in Armoor, preschool teacher jobs, play school openings, daycare staff Armoor" />
   <meta name="description"
-    content="Join the Gentle Kids Play School team! Explore fulfilling careers in early childhood education in Armoor. Apply for teacher, caregiver, and admin positions." />
+    content="Join the Scholars Olympiad School team! Explore fulfilling careers in early childhood education in Armoor. Apply for teacher, caregiver, and admin positions." />
 
-  <title>Careers at Gentle Kids Play School | Join Our Passionate Team</title>
+  <title>Careers at Scholars Olympiad School | Join Our Passionate Team</title>
 
   <!-- Open Graph for Social Sharing -->
-  <meta property="og:title" content="Careers at Gentle Kids Play School – Work With Us" />
+  <meta property="og:title" content="Careers at Scholars Olympiad School – Work With Us" />
   <meta property="og:description"
-    content="Gentle Kids Play School in Armoor is hiring! Apply now for rewarding positions in preschool education and childcare." />
-  <meta property="og:image" content="https://gentlekidsplayschool.in/assets/logo.jpg" />
+    content="Scholars Olympiad School in Armoor is hiring! Apply now for rewarding positions in preschool education and childcare." />
+  <meta property="og:image" content="https://gentlekidsplayschool.in/assets/logo.png" />
   <meta property="og:url" content="https://gentlekidsplayschool.in/careers.php" />
   <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="Gentle Kids Play School" />
+  <meta property="og:site_name" content="Scholars Olympiad School" />
 
   <!-- Schema Markup for JobPosting -->
   <script type="application/ld+json">
@@ -41,17 +41,17 @@ if (file_exists($jobsFile)) {
     "@context": "https://schema.org",
     "@type": "JobPosting",
     "title": "Preschool Teacher",
-    "description": "Gentle Kids Play School is seeking passionate early educators in Armoor who love working with children and nurturing young minds.",
+    "description": "Scholars Olympiad School is seeking passionate early educators in Armoor who love working with children and nurturing young minds.",
     "identifier": {
       "@type": "PropertyValue",
-      "name": "Gentle Kids Play School",
+      "name": "Scholars Olympiad School",
       "value": "GKPS-CAREERS"
     },
     "hiringOrganization": {
       "@type": "Organization",
-      "name": "Gentle Kids Play School",
+      "name": "Scholars Olympiad School",
       "sameAs": "https://gentlekidsplayschool.in",
-      "logo": "https://gentlekidsplayschool.in/assets/logo.jpg"
+      "logo": "https://gentlekidsplayschool.in/assets/logo.png"
     },
     "jobLocation": {
       "@type": "Place",
@@ -91,7 +91,7 @@ if (file_exists($jobsFile)) {
        <!-- Enhanced Logo Section -->
 <div class="flex items-center gap-4" id="logo">
   <!-- Logo Image -->
-  <img src="assets/logo.jpg" alt="School Logo" class="h-16 w-16 rounded-full shadow-md object-cover">
+  <img src="assets/logo.png" alt="School Logo" class="h-16 w-16 rounded-full shadow-md object-cover">
 
   <!-- Logo Text -->
   <div class="leading-tight">
@@ -164,7 +164,7 @@ if (file_exists($jobsFile)) {
 <div class="bg-[#FDE68A] text-[#1E293B] py-24 px-6 relative overflow-hidden">
   <div class="max-w-6xl mx-auto text-center relative z-10">
     <h1 class="text-4xl md:text-5xl font-extrabold mb-4 fade-up">
-      Join <span class="text-[#DC2626]">Gentle Kids Play School</span>
+      Join <span class="text-[#DC2626]">Scholars Olympiad School</span>
     </h1>
     <p class="text-lg md:text-xl max-w-2xl mx-auto mb-4 fade-up">
       Be a part of a joyful and nurturing educational environment where children grow and thrive.
@@ -234,7 +234,7 @@ if (file_exists($jobsFile)) {
       <div class="footer-about">
         <h4 class="text-xl font-bold mb-4">About Gentle Kids</h4>
         <p class="text-sm leading-relaxed">
-          Gentle Kids Play School in Armoor is a nurturing preschool and early education center committed to playful
+          Scholars Olympiad School in Armoor is a nurturing preschool and early education center committed to playful
           learning.
           With branches in Yogeshwara Colony and Janda Gally, we focus on building strong foundations through fun, care,
           and creativity—making us one of the most trusted play schools in Armoor.
@@ -315,7 +315,7 @@ if (file_exists($jobsFile)) {
 
     <!-- Divider and Bottom Note -->
     <div class="border-t border-white mt-10 pt-4 text-center text-sm">
-      &copy; 2025 Gentle Kids Play School, Armoor. All rights reserved. | Trusted preschool and early education center
+      &copy; 2025 Scholars Olympiad School, Armoor. All rights reserved. | Trusted preschool and early education center
       in Telangana.
       <br>
       <span class="block mt-1">Designed & Developed by

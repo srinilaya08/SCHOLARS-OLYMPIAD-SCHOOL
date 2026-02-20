@@ -31,7 +31,7 @@ if (!$is_authenticated) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Login | Gentle kids play School</title>
+    <title>Admin Login | Scholars Olympiad School</title>
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/output.css">
     <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
@@ -91,7 +91,7 @@ if (!$is_authenticated) {
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Admin Dashboard | Gentle kids play School</title>
+    <title>Admin Dashboard | Scholars Olympiad School</title>
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/output.css">
     <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
@@ -101,7 +101,7 @@ if (!$is_authenticated) {
         <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
             <div>
                 <h1 class="text-3xl font-bold">Admin Dashboard</h1>
-                <p class="text-sm text-blue-200">Manage content across the Gentle kids play School website</p>
+                <p class="text-sm text-blue-200">Manage content across the Scholars Olympiad School website</p>
             </div>
             <div class="flex items-center space-x-4">
                 <span class="text-sm text-blue-200">Welcome, Admin</span>
